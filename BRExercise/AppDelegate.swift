@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import BlinkReceipt
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private let license = "sRwAAAEcY29tLmVkdmlubGVsbGhhbWUuYnJleGVyY2lzZVv5SDIzH2AIsmy2j5bVjHyiLX41bM/OYIPmlKKlmOGmKRUSM1VF2hehtmhTesYAXjsx7o1LWoNxVAhV247AjThUgo4HkVk7fjt6VdRkziP/hmojPOm4oPT0UMsXmucKyINRzxl2Vbbvx1mitzA8SVJ8gonPLPjgQco+VV59ebSjGF4BSUcN"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        BRScanManager.shared().licenseKey = license
+        
         return true
     }
 
